@@ -137,8 +137,16 @@ def four(string1, string2):
 
 
 def five():
-    return []
-
+    import random
+    answer = []
+    i=0
+    while i < 5:
+        number = random.randint(100,200)
+        if number % 2 == 0:
+            answer.append(number)
+            i +=1
+    return answer
+print(five())
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 6>
