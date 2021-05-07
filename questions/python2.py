@@ -196,6 +196,10 @@ def six(string):
 
 
 def seven(a, b, c):
+    numbers = [a,b,c]
+    numbers.sort()
+    if numbers[1]-numbers[0] == numbers[2]-numbers[1]:
+        return True
     return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
