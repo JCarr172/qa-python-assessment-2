@@ -114,7 +114,10 @@ def three(a):
 
 
 def four(string1, string2):
-    return ""
+    result = ('')
+    for char in range (0, len(string1)):
+        result += string1[char] + string2[char]
+    return result
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
