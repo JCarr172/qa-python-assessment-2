@@ -242,9 +242,19 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
+    if len(string1) > len(string2):
+        string1, string2 = string2, string1
 
-    return False
+    answer = []
+    for char in string1:
+        if char not in string2:
+            answer.append(False)
+        else:
+            answer.append(True)
+    if False in answer: return False
+    else: return True
 
+nine("cat", "dog")
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 10>
